@@ -1,0 +1,6 @@
+[
+    { "caption": "Live CSS: Colorize",        "command": "css_colorize"},
+    { "caption": "Live CSS: Uncolorize",      "command": "css_uncolorize"},
+    { "caption": "Live CSS: Toggle locally",  "command": "toggle_local_live_css"},
+    { "caption": "Live CSS: Toggle globally", "command": "toggle_global_live_css"}
+]

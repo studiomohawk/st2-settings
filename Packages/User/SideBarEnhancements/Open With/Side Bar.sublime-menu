@@ -1,0 +1,65 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+			// marked
+			{
+				"caption": "marked",
+				"id": "side-bar-files-open-with-marked",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "marked.app",
+									"extensions":"md|markdown" //open all even folders
+								}
+			},
+			// iaWriter
+			{
+				"caption": "iaWriter",
+				"id": "side-bar-files-open-with-iaWriter",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "iAWriter.app",
+									"extensions":"md|markdown" //open all even folders
+								}
+			},
+			{"caption":"-"},
+			// Browsers
+			{
+				"caption": "Chrome",
+				"id": "side-bar-files-open-with-chrome",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Chrome.app",
+									"extensions":"htm|html|php"  //any file with these extensions
+								}
+			},
+			{"caption":"-"},
+			// Pixelimator
+			{
+				"caption": "Pixelmator",
+				"id": "side-bar-files-open-with-Pixelmator",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Pixelmator.app",
+									"extensions":"png|jpg|jpeg|gif"  //any file with these extensions
+								}
+			},
+			{"caption":"-"},
+			// Preview
+			{
+				"caption": "Preview",
+				"id": "side-bar-files-open-with-preview",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Preview.app",
+									"extensions":"psd|png|jpg|jpeg|gif"  //any file with these extensions
+								}
+			}
+		]
+	}
+]

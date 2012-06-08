@@ -1,0 +1,25 @@
+{
+	"color_scheme": "Packages/Tomorrow-Night-Eighties.tmTheme",
+	"detect_slow_plugins": false,
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"HTML5",
+		"TrailingSpaces"
+	],
+	"todo":
+	{
+	    "file_exclude_patterns":[
+	        "*.css", "*.po", "*.mo"
+	    ],
+	    "folder_exclude_patterns": [
+	        "static", "vendor", "tmp"
+	    ],
+	    "patterns":
+	    {
+	        "BUG": "BUG[\\s]*?:+(?P<bug>.*)$"
+	    },
+	    "case_sensitive": true,
+	    "result_title": "TODO Results"
+	}
+}

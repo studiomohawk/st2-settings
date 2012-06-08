@@ -1,0 +1,6 @@
+{
+    "osx": {
+        "cmd": ["open", "-a", "/Users/studiomohawk/Dropbox/script/prettycss.app", "$file $file"]
+    },
+    "selector": "css"
+}

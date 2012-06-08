@@ -1,0 +1,47 @@
+{
+	"auto_upgrade_last_run": 1334886937,
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"alternative_autocompletion",
+		"AsAbove",
+		"AutoFileName",
+		"BracketHighlighter",
+		"CSSLint",
+		"DetectSyntax",
+		"Git",
+		"HTML5",
+		"jQuery Snippets pack",
+		"JsFormat",
+		"JSHint",
+		"LESS",
+		"Nettuts+ Fetch",
+		"Nodejs",
+		"Open-Include",
+		"Package Control",
+		"Prefixr",
+		"Pretty JSON",
+		"Rake",
+		"Sass",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"sublime-github",
+		"SublimeBlockCursor",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeTODO",
+		"SyncedSideBar",
+		"Tag",
+		"Theme - Soda",
+		"TrailingSpaces",
+		"VintageEx",
+		"Whitespace Corrector",
+		"ZenCoding"
+	],
+	"repositories":
+	[
+		"https://bitbucket.org/sublimator/sublime-2-zencoding",
+		"https://bitbucket.org/sublimator/sublime-2-zencoding"
+	]
+}
