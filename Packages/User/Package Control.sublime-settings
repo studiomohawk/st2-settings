@@ -1,15 +1,17 @@
 {
-	"auto_upgrade_last_run": 1339632821,
+	"auto_upgrade_last_run": 1340754269,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"Alignment",
 		"alternative_autocompletion",
 		"AutoFileName",
+		"Backbone.js",
 		"BracketHighlighter",
 		"BufferScroll",
 		"Change Tracker",
 		"DetectSyntax",
+		"EditorConfig",
 		"FileDiffs",
 		"Git",
 		"HTML5",
@@ -17,6 +19,7 @@
 		"JsFormat",
 		"LESS",
 		"Live CSS",
+		"LoremPixel",
 		"Marked.app Menu",
 		"Nettuts+ Fetch",
 		"Nodejs",

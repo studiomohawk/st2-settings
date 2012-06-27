@@ -17,6 +17,14 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 		self.reraise_exceptions = False
 
 
+	def on_new(self, view):
+		settings = sublime.load_settings(self.plugin_name + '.sublime-settings')
+		name = settings.get("new_file_syntax")
+		if name:
+			self.view = view
+			self.set_syntax(name)
+
+
 	def on_load(self, view):
 		self.detect_syntax(view)
 
@@ -38,7 +46,7 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 		for syntax in self.syntaxes:
 			# stop on the first syntax that matches
 			if self.syntax_matches(syntax):
-				self.set_syntax(syntax)
+				self.set_syntax(syntax.get("name"))
 				break
 
 
@@ -50,9 +58,7 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 		self.reraise_exceptions = False
 
 
-	def set_syntax(self, syntax):
-		name = syntax.get("name")
-
+	def set_syntax(self, name):
 		# the default settings file uses / to separate the syntax name parts, but if the user
 		# is on windows, that might not work right. And if the user happens to be on Mac/Linux but
 		# is using rules that were written on windows, the same thing will happen. So let's

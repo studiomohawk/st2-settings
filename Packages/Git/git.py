@@ -375,8 +375,7 @@ class GitShowAllCommand(GitShow, GitWindowCommand):
 class GitGraph(object):
     def run(self, edit=None):
         self.run_command(
-            ['git', 'log', '--graph', '--pretty=%h %aN %ci%d %s', '--abbrev-commit', '--no-color', '--decorate',
-            '--date-order', self.get_graph_options(), '--', self.get_file_name()],
+            ['git', 'log', '--graph', '--pretty=%h -%d (%cr) (%ci) <%an> %s', '--abbrev-commit', '--no-color', '--decorate', '--date=relative', '--', self.get_file_name()],
             self.log_done
         )
 
@@ -514,6 +513,7 @@ class GitCommitCommand(GitWindowCommand):
     def diff_done(self, result):
         template = "\n".join([
             "",
+            "",
             "# Please enter the commit message for your changes. Lines starting",
             "# with '#' and everything after the 'END' statement below will be ",
             "# ignored, and an empty message aborts the commit.",
@@ -560,6 +560,8 @@ class GitCommitMessageListener(sublime_plugin.EventListener):
 
 
 class GitStatusCommand(GitWindowCommand):
+    force_open = False
+
     def run(self):
         self.run_command(['git', 'status', '--porcelain'], self.status_done)
 
@@ -592,8 +594,8 @@ class GitStatusCommand(GitWindowCommand):
 
         s = sublime.load_settings("Git.sublime-settings")
         root = git_root(self.get_working_dir())
-        if picked_status == '??' or s.get('status_opens_file'):
-            self.window.open_file(os.path.join(root, picked_file))
+        if picked_status == '??' or s.get('status_opens_file') or self.force_open:
+            if(os.path.isfile(picked_file)): self.window.open_file(os.path.join(root, picked_file))
         else:
             self.run_command(['git', 'diff', '--no-color', '--', picked_file.strip('"')],
                 self.diff_done, working_dir=root)
@@ -603,6 +605,12 @@ class GitStatusCommand(GitWindowCommand):
             return
         self.scratch(result, title="Git Diff")
 
+class GitOpenModifiedFilesCommand(GitStatusCommand):
+    force_open = True
+
+    def show_status_list(self):
+        for line_index in range(0, len(self.results)):
+            self.panel_done(line_index)
 
 class GitAddChoiceCommand(GitStatusCommand):
     def status_filter(self, item):
@@ -888,7 +896,7 @@ class GitAnnotateCommand(GitTextCommand):
         self.run_command(['git', 'show', 'HEAD:{0}'.format(repo_file)], show_status=False, no_save=True, callback=self.compare_tmp, stdout=self.tmp)
 
     def compare_tmp(self, result, stdout=None):
-        all_text = self.view.substr(sublime.Region(0, self.view.size()))
+        all_text = self.view.substr(sublime.Region(0, self.view.size())).encode("utf-8")
         self.run_command(['diff', '-u', self.tmp.name, '-'], stdin=all_text, no_save=True, show_status=False, callback=self.parse_diff)
 
     # This is where the magic happens. At the moment, only one chunk format is supported. While
