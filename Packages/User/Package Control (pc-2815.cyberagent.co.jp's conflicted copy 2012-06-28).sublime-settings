@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1340928725,
+	"auto_upgrade_last_run": 1340840481,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -24,7 +24,6 @@
 		"Nettuts+ Fetch",
 		"Nodejs",
 		"Open-Include",
-		"Origami",
 		"Package Control",
 		"PowerPaste",
 		"Prefixr",

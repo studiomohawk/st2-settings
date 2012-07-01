@@ -132,12 +132,18 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 
 		# is path_to_file absolute?
 		if not os.path.isabs(path_to_file):
-			# it's not, so look in Packages/User
-			if os.path.exists(self.user_dir + os.path.sep + path_to_file):
-				path_to_file = self.user_dir + os.path.sep + path_to_file
+			user_file = self.user_dir + os.path.sep + path_to_file
+			plugin_file = self.plugin_dir + os.path.sep + path_to_file
+
+			# it's not absolute, so look in Packages/User
+			if os.path.exists(user_file):
+				path_to_file = user_file
+			# now look in the plugin's directory
+			elif os.path.exists(plugin_file):
+				path_to_file = plugin_file
 			else:
-				# now look in the plugin's directory
-				path_to_file = self.plugin_dir + os.path.sep + path_to_file
+				# can't find it ... nothing more to do
+				return False
 
 		# bubble exceptions up only if the user wants them
 		try:

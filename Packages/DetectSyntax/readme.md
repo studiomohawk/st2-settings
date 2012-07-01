@@ -60,6 +60,10 @@ Contributing
 
 History
 -------
+2012-06-28
+
+* Better handling of file defining a function potentially not existing.
+
 2012-06-26
 
 * Added new_file_syntax so new files can have a syntax applied immediately.
