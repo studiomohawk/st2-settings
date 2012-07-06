@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 import os, string, re
 
-plugin_directory = os.getcwd()
+plugin_directory = os.getcwdu()
 
 class DetectSyntaxCommand(sublime_plugin.EventListener):
 	def __init__(self):
@@ -11,7 +11,6 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 		self.view = None
 		self.syntaxes = []
 		self.plugin_name = 'DetectSyntax'
-		# self.plugin_dir = sublime.packages_path() + os.path.sep + self.plugin_name
 		self.plugin_dir = plugin_directory
 		self.user_dir = sublime.packages_path() + os.path.sep + 'User'
 		self.reraise_exceptions = False

@@ -60,6 +60,10 @@ Contributing
 
 History
 -------
+2012-07-02
+
+* Fixed improper handling of directories with non-ascii characters [Closes #5, thanks Andrew Dryga]
+
 2012-06-28
 
 * Better handling of file defining a function potentially not existing.

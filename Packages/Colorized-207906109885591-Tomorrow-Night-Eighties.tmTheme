@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>comment</key>
+	<string>http://chriskempson.com</string>
+	<key>name</key>
+	<string>Tomorrow Night - Eighties</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#2D2D2D</string>
+				<key>caret</key>
+				<string>#CCCCCC</string>
+				<key>foreground</key>
+				<string>#CCCCCC</string>
+				<key>invisibles</key>
+				<string>#6A6A6A</string>
+				<key>lineHighlight</key>
+				<string>#393939</string>
+				<key>selection</key>
+				<string>#515151</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#999999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Foreground</string>
+			<key>scope</key>
+			<string>keyword.operator.class, constant.other, source.php.embedded.line</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#CCCCCC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable, String Link, Tag Name</string>
+			<key>scope</key>
+			<string>variable, support.other.variable, string.other.link, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F2777A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
+			<key>scope</key>
+			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#F99157</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Class, Support</string>
+			<key>scope</key>
+			<string>entity.name.class, entity.name.type.class, support.type, support.class</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#FFCC66</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String, Symbols, Inherited Class, Markup Heading</string>
+			<key>scope</key>
+			<string>string, constant.other.symbol, entity.other.inherited-class, markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#99CC99</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Operator, Misc</string>
+			<key>scope</key>
+			<string>keyword.operator, constant.other.color</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66CCCC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function, Special Method, Block Level</string>
+			<key>scope</key>
+			<string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#6699CC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword, Storage</string>
+			<key>scope</key>
+			<string>keyword, storage, storage.type, entity.name.tag.css</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#CC99CC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Invalid</string>
+			<key>scope</key>
+			<string>invalid</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#F2777A</string>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#CDCDCD</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Separator</string>
+			<key>scope</key>
+			<string>meta.separator</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#99CCCC</string>
+				<key>foreground</key>
+				<string>#CDCDCD</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Deprecated</string>
+			<key>scope</key>
+			<string>invalid.deprecated</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#CC99CC</string>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#CDCDCD</string>
+			</dict>
+		</dict>
+	<dict>
+<key>scope</key>
+<string>#dddddd</string>
+<key>name</key>
+<string>'#dddddd'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dddddd</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#86745a</string>
+<key>name</key>
+<string>'#86745a'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#86745a</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e0e0e0</string>
+<key>name</key>
+<string>'#e0e0e0'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e0e0e0</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ececec</string>
+<key>name</key>
+<string>'#ececec'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ececec</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fefefd</string>
+<key>name</key>
+<string>'#fefefd'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fefefd</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fefefe</string>
+<key>name</key>
+<string>'#fefefe'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fefefe</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f3f0eb</string>
+<key>name</key>
+<string>'#f3f0eb'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f3f0eb</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#edeae5</string>
+<key>name</key>
+<string>'#edeae5'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#edeae5</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f5f4f2</string>
+<key>name</key>
+<string>'#f5f4f2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f5f4f2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f7f4ef</string>
+<key>name</key>
+<string>'#f7f4ef'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f7f4ef</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#8b8677</string>
+<key>name</key>
+<string>'#8b8677'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#8b8677</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dbdada</string>
+<key>name</key>
+<string>'#dbdada'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dbdada</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#c4c4c4</string>
+<key>name</key>
+<string>'#c4c4c4'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#c4c4c4</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#000000</string>
+<key>name</key>
+<string>'#000000'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#000000</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fbfaf8</string>
+<key>name</key>
+<string>'#fbfaf8'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fbfaf8</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e3e2e0</string>
+<key>name</key>
+<string>'#e3e2e0'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e3e2e0</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#999999</string>
+<key>name</key>
+<string>'#999999'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#999999</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#a7a7a7</string>
+<key>name</key>
+<string>'#a7a7a7'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#a7a7a7</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#584c3b</string>
+<key>name</key>
+<string>'#584c3b'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#584c3b</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ffffff</string>
+<key>name</key>
+<string>'#ffffff'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ffffff</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f9f6f2</string>
+<key>name</key>
+<string>'#f9f6f2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f9f6f2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#a0eff5</string>
+<key>name</key>
+<string>'#a0eff5'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#a0eff5</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dfdfdf</string>
+<key>name</key>
+<string>'#dfdfdf'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dfdfdf</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#71624c</string>
+<key>name</key>
+<string>'#71624c'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#71624c</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e3ded2</string>
+<key>name</key>
+<string>'#e3ded2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e3ded2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#a8a6a2</string>
+<key>name</key>
+<string>'#a8a6a2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#a8a6a2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#949494</string>
+<key>name</key>
+<string>'#949494'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#949494</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#96ecf2</string>
+<key>name</key>
+<string>'#96ecf2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#96ecf2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fdfdfd</string>
+<key>name</key>
+<string>'#fdfdfd'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fdfdfd</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dcd2c1</string>
+<key>name</key>
+<string>'#dcd2c1'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dcd2c1</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f8f8f8</string>
+<key>name</key>
+<string>'#f8f8f8'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f8f8f8</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#eae4dc</string>
+<key>name</key>
+<string>'#eae4dc'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#eae4dc</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#efefef</string>
+<key>name</key>
+<string>'#efefef'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#efefef</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#b6a78e</string>
+<key>name</key>
+<string>'#b6a78e'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#b6a78e</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fbf7f1</string>
+<key>name</key>
+<string>'#fbf7f1'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fbf7f1</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#FFFFFF</string>
+<key>name</key>
+<string>'#FFFFFF'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#FFFFFF</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#c5c0b9</string>
+<key>name</key>
+<string>'#c5c0b9'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#c5c0b9</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ede7de</string>
+<key>name</key>
+<string>'#ede7de'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ede7de</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#c7dadf</string>
+<key>name</key>
+<string>'#c7dadf'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#c7dadf</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#a9a9a9</string>
+<key>name</key>
+<string>'#a9a9a9'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#a9a9a9</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#acacac</string>
+<key>name</key>
+<string>'#acacac'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#acacac</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e7e4df</string>
+<key>name</key>
+<string>'#e7e4df'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e7e4df</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#63a3b4</string>
+<key>name</key>
+<string>'#63a3b4'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#63a3b4</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#9b8b73</string>
+<key>name</key>
+<string>'#9b8b73'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#9b8b73</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fcfbfa</string>
+<key>name</key>
+<string>'#fcfbfa'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fcfbfa</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#66a8b9</string>
+<key>name</key>
+<string>'#66a8b9'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#66a8b9</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dbdbdb</string>
+<key>name</key>
+<string>'#dbdbdb'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dbdbdb</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#848484</string>
+<key>name</key>
+<string>'#848484'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#848484</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#FEFEFE</string>
+<key>name</key>
+<string>'#FEFEFE'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#FEFEFE</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#5e848e</string>
+<key>name</key>
+<string>'#5e848e'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#5e848e</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#D9D9D9</string>
+<key>name</key>
+<string>'#D9D9D9'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#D9D9D9</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#837869</string>
+<key>name</key>
+<string>'#837869'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#837869</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#F3F0EB</string>
+<key>name</key>
+<string>'#F3F0EB'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#F3F0EB</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#fafafa</string>
+<key>name</key>
+<string>'#fafafa'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#fafafa</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e5e4e2</string>
+<key>name</key>
+<string>'#e5e4e2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e5e4e2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f4f4f4</string>
+<key>name</key>
+<string>'#f4f4f4'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f4f4f4</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f0ede7</string>
+<key>name</key>
+<string>'#f0ede7'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f0ede7</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#d2cdc2</string>
+<key>name</key>
+<string>'#d2cdc2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#d2cdc2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dad9d7</string>
+<key>name</key>
+<string>'#dad9d7'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dad9d7</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#bdb9af</string>
+<key>name</key>
+<string>'#bdb9af'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#bdb9af</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#cbf6f9</string>
+<key>name</key>
+<string>'#cbf6f9'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#cbf6f9</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dfdcd8</string>
+<key>name</key>
+<string>'#dfdcd8'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dfdcd8</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#cccbcb</string>
+<key>name</key>
+<string>'#cccbcb'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#cccbcb</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ece7df</string>
+<key>name</key>
+<string>'#ece7df'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ece7df</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ecf5f7</string>
+<key>name</key>
+<string>'#ecf5f7'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ecf5f7</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#b5ab9b</string>
+<key>name</key>
+<string>'#b5ab9b'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#b5ab9b</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ffff99</string>
+<key>name</key>
+<string>'#ffff99'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ffff99</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#dbd6ce</string>
+<key>name</key>
+<string>'#dbd6ce'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#dbd6ce</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#d1f7fa</string>
+<key>name</key>
+<string>'#d1f7fa'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#d1f7fa</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#ffff00</string>
+<key>name</key>
+<string>'#ffff00'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#ffff00</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#eaeaea</string>
+<key>name</key>
+<string>'#eaeaea'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#eaeaea</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#cac6be</string>
+<key>name</key>
+<string>'#cac6be'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#cac6be</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#707070</string>
+<key>name</key>
+<string>'#707070'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#707070</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f0f0f0</string>
+<key>name</key>
+<string>'#f0f0f0'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f0f0f0</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#666666</string>
+<key>name</key>
+<string>'#666666'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#ffffff</string>
+<key>background</key>
+<string>#666666</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#d1c9c1</string>
+<key>name</key>
+<string>'#d1c9c1'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#d1c9c1</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#c8c6c2</string>
+<key>name</key>
+<string>'#c8c6c2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#c8c6c2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#a5a099</string>
+<key>name</key>
+<string>'#a5a099'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#a5a099</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f4f2ee</string>
+<key>name</key>
+<string>'#f4f2ee'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f4f2ee</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#c1f5f8</string>
+<key>name</key>
+<string>'#c1f5f8'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#c1f5f8</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#c8f6fa</string>
+<key>name</key>
+<string>'#c8f6fa'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#c8f6fa</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e8e4db</string>
+<key>name</key>
+<string>'#e8e4db'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e8e4db</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#9B8B73</string>
+<key>name</key>
+<string>'#9B8B73'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#9B8B73</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#f0dddd</string>
+<key>name</key>
+<string>'#f0dddd'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#f0dddd</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#efefee</string>
+<key>name</key>
+<string>'#efefee'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#efefee</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#cccccc</string>
+<key>name</key>
+<string>'#cccccc'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#cccccc</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e2e2e2</string>
+<key>name</key>
+<string>'#e2e2e2'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e2e2e2</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#b3a28a</string>
+<key>name</key>
+<string>'#b3a28a'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#b3a28a</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#cfcdc7</string>
+<key>name</key>
+<string>'#cfcdc7'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#cfcdc7</string>
+</dict>
+</dict>
+<dict>
+<key>scope</key>
+<string>#e7e6e4</string>
+<key>name</key>
+<string>'#e7e6e4'</string>
+<key>settings</key>
+<dict>
+<key>foreground</key>
+<string>#000000</string>
+<key>background</key>
+<string>#e7e6e4</string>
+</dict>
+</dict></array>
+	<key>uuid</key>
+	<string>DE477E5B-BD4D-46B0-BF80-2EA32A2814D5</string>
+</dict>
+</plist>
