@@ -1,4 +1,6 @@
-### This is essentially a mirror of [jdc0589/JsFormat](https://github.com/jdc0589/JsFormat). Please submit issues there. I will keep this repo up to date.
+!!!!!!!!!!!!!!!!!
+
+**This is a clone of https://github.com/jdc0589/JsFormat. Submit issues/requests/etc... there**
 
 ## Summary
 JsFormat is a javascipt formatting plugin for Sublime Text 2.
@@ -7,6 +9,7 @@ or the entire file if there is no selection. The plugin does not check to make s
 it just javascript formats the selection/file. Thus, use with caution if you are in an html file.
 
 *I am investigating replacing JsFormat with an 'all in one' formatting plugin to support multiple languages: [Format](http://github.com/jdc0589/Format) (very very pre-alpha). JsFormat's complete feature set would be present for js/json files. Please leave me some feedback if you think this is a good/bad idea.*
+<a href='http://www.pledgie.com/campaigns/17687'><img alt='Click here to lend your support to: JsFormat and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/17687.png?skin_name=chrome' border='0' /></a>
 
 ## Features
 * javascript/json formatting (obviously)
@@ -45,6 +48,11 @@ Clone this repository in to the Sublime Text 2 "Packages" directory, which is lo
 ## Key Binding
 
 The default key binding is "ctrl+alt+f"
+
+## Key Binding Conflicts
+
+Unfortunately there are other plugins that use "ctrl + alt + f", this is a hard problem to solve. If JsFormat works
+OK via the command palette but does nothing when you use the "ctrl + alt + f" shortcut, please change the shortcut in the appropriate *.sublime-keymap file, re-test, and let me know how it went (just submit a bug report). [This is the current bug report we are using to discuss this issue](https://github.com/jdc0589/JsFormat/issues/7)
 
 ## Command Palette
 

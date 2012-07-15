@@ -105,6 +105,7 @@
 				{"file_name": ".*\\.thor$"},
 				{"file_name": ".*\\config.ru$"},
 				{"file_name": ".*\\.rake$"},
+				{"file_name": ".*\\.simplecov$"},
 				{"file_name": ".*\\.rb$"},
 				// a binary rule does the same thing as a first_line rule that uses a regexp to match a shebang, the
 				// difference being DetectSyntax will construct the regexp and the user doesn't have to. So

@@ -13,11 +13,14 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 		self.plugin_name = 'DetectSyntax'
 		self.plugin_dir = plugin_directory
 		self.user_dir = sublime.packages_path() + os.path.sep + 'User'
+		self.settings_file = self.plugin_name + '.sublime-settings'
 		self.reraise_exceptions = False
+
+		self.ensure_user_settings()
 
 
 	def on_new(self, view):
-		settings = sublime.load_settings(self.plugin_name + '.sublime-settings')
+		settings = sublime.load_settings(self.settings_file)
 		name = settings.get("new_file_syntax")
 		if name:
 			self.view = view
@@ -189,3 +192,29 @@ class DetectSyntaxCommand(sublime_plugin.EventListener):
 		else:
 			return False
 
+
+	def ensure_user_settings(self):
+		user_settings_file = self.user_dir + os.path.sep + self.settings_file
+		if os.path.exists(user_settings_file):
+			return
+
+		# file doesn't exist, let's create a bare one
+		output = """
+{
+	// If you want exceptions reraised so you can see them in the console, change this to true.
+	"reraise_exceptions": false,
+
+	// If you want to have a syntax applied when new files are created, set new_file_syntax to the name of the syntax to use.
+	// The format is exactly the same as "name" in the rules below. For example, if you want to have a new file use 
+	// JavaScript syntax, set new_file_syntax to 'JavaScript'.
+	"new_file_syntax": false,
+
+	// Put your custom syntax rules here:
+	"syntaxes": [
+	]
+}
+"""
+
+		file = open(user_settings_file, 'w')
+		file.write(output)
+		file.close

@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1341531571,
+	"auto_upgrade_last_run": 1342332499,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -10,11 +10,13 @@
 		"BracketHighlighter",
 		"BufferScroll",
 		"Change Tracker",
+		"Csslisible",
 		"DetectSyntax",
 		"EditorConfig",
 		"FileDiffs",
 		"Git",
 		"HTML5",
+		"Inc-Dec-Value",
 		"jQuery",
 		"JsFormat",
 		"LESS",
@@ -33,6 +35,7 @@
 		"Sass",
 		"SideBarEnhancements",
 		"SideBarGit",
+		"SmartMarkdown",
 		"Stylus",
 		"sublime-github",
 		"SublimeBlockCursor",
