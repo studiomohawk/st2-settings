@@ -173,6 +173,9 @@ class GitCommand(object):
                 do_when(lambda: not self.active_view().is_loading(), lambda: self.active_view().set_viewport_position(position, False))
                 # self.active_view().show(position)
 
+        if self.active_view().settings().get('live_git_annotations'):
+            self.view.run_command('git_annotate')
+
         if not result.strip():
             return
         self.panel(result)
@@ -530,6 +533,7 @@ class GitCommitCommand(GitWindowCommand):
     extra_options = ""
 
     def run(self):
+        self.lines = []
         self.working_dir = self.get_working_dir()
         self.run_command(
             ['git', 'status', '--untracked-files=no', '--porcelain'],
@@ -561,7 +565,7 @@ class GitCommitCommand(GitWindowCommand):
         def format(line):
             return '# ' + line.replace("\n", " ")
 
-        if not hasattr(self, "lines"):
+        if not len(self.lines):
             self.lines = ["", ""]
 
         self.lines.extend(map(format, history[:historySize]))
@@ -694,17 +698,25 @@ class GitAddChoiceCommand(GitStatusCommand):
         return not item[1].isspace()
 
     def show_status_list(self):
-        self.results.insert(0, [" + All Files", "apart from untracked files"])
+        self.results = [[" + All Files", "apart from untracked files"], [" + All Files", "including untracked files"]] + self.results
         self.quick_panel(self.results, self.panel_done,
             sublime.MONOSPACE_FONT)
 
     def panel_followup(self, picked_status, picked_file, picked_index):
         if picked_index == 0:
-            args = ["--update"]
+            command = ['git', 'add', '--update']
+        elif picked_index == 1:
+            command = ['git', 'add', '--all']
         else:
-            args = ["--", picked_file.strip('"')]
+            command = ['git']
+            picked_file = picked_file.strip('"')
+            if os.path.isfile(picked_file):
+                command += ['add']
+            else:
+                command += ['rm']
+            command += ['--', picked_file]
 
-        self.run_command(['git', 'add'] + args, self.rerun,
+        self.run_command(command, self.rerun,
             working_dir=git_root(self.get_working_dir()))
 
     def rerun(self, result):
@@ -809,7 +821,7 @@ class GitOpenFileCommand(GitLog, GitWindowCommand):
 
 class GitBranchCommand(GitWindowCommand):
     may_change_files = True
-    command_to_run_after_branch = 'checkout'
+    command_to_run_after_branch = ['checkout']
     extra_flags = []
 
     def run(self):
@@ -827,15 +839,15 @@ class GitBranchCommand(GitWindowCommand):
         if picked_branch.startswith("*"):
             return
         picked_branch = picked_branch.strip()
-        self.run_command(['git', self.command_to_run_after_branch, picked_branch])
+        self.run_command(['git'] + self.command_to_run_after_branch + [picked_branch])
 
 
 class GitMergeCommand(GitBranchCommand):
-    command_to_run_after_branch = 'merge'
+    command_to_run_after_branch = ['merge']
     extra_flags = ['--no-merge']
 
 class GitDeleteBranchCommand(GitBranchCommand):
-    command_to_run_after_branch = ['branch', ' -d']
+    command_to_run_after_branch = ['branch', '-d']
 
 class GitNewBranchCommand(GitWindowCommand):
     def run(self):
@@ -1048,6 +1060,10 @@ class GitAnnotationListener(sublime_plugin.EventListener):
         if not view.settings().get('live_git_annotations'):
             return
         view.run_command('git_annotate')
+    def on_load(self, view):
+        s = sublime.load_settings("Git.sublime-settings")
+        if s.get('annotations'):
+            view.run_command('git_annotate')
 
 
 class GitAnnotateCommand(GitTextCommand):

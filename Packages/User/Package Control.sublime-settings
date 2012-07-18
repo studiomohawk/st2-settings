@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1342332499,
+	"auto_upgrade_last_run": 1342569636,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -10,6 +10,7 @@
 		"BracketHighlighter",
 		"BufferScroll",
 		"Change Tracker",
+		"ChangeQuotes",
 		"Csslisible",
 		"DetectSyntax",
 		"EditorConfig",
@@ -33,6 +34,7 @@
 		"Pretty JSON",
 		"Rake",
 		"Sass",
+		"SCSS",
 		"SideBarEnhancements",
 		"SideBarGit",
 		"SmartMarkdown",
